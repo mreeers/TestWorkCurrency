@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
+using TestApp.BLL.Interface;
 using TestApp.Models;
 
 namespace TestApp.BLL
 {
-    public class CbrService
+    public class CbrService : ICbrService
     {
         public Currency Get()
         {
